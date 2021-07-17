@@ -2,15 +2,11 @@ import altair as alt
 import copy
 import numpy as np
 import pandas as pd
-import scipy.stats as stats
 import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.utils import resample
 
 # Classification_report function will be used to check the working of the model
