@@ -1,6 +1,6 @@
-!pip install pandas
-!pip install seaborn
-!pip install sklearn
+# !pip install pandas
+# !pip install seaborn
+# !pip install sklearn
 import altair as alt
 import copy
 import numpy as np
