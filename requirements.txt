@@ -1,3 +1,0 @@
-seaborn
-sklearn
-matplotlib
