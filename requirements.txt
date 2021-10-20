@@ -1,2 +1,5 @@
 plotly
 scipy
+seaborn
+matplotlib
+sklearn
