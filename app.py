@@ -131,7 +131,7 @@ data_final = pd.concat([df_majority, df_minority_upsampled])
 ## User inputs on the control panel
 mode = st.sidebar.radio("Select Section: ", ('Data', 'Visualization', 'Model'))
 if mode == 'Data':
-    st.markdown("### Data")
+    st.markdown("## Data")
     data_ver = st.sidebar.selectbox(
          'Knowing the data',
          ('Original Data', 'Number of null values', 'Transformed Data'))
@@ -145,7 +145,7 @@ if mode == 'Data':
 
 
 elif mode == 'Visualization':
-    st.markdown("### Visualization")
+    st.markdown("## Visualization")
     data_look = st.sidebar.selectbox(
          'Visualizations',
          ('Count of graduated',
@@ -247,7 +247,7 @@ elif mode == 'Visualization':
 #        'KNN Classifier'))
 
 elif mode == 'Model':
-    st.markdown("### Model Validation")
+    st.markdown("## Model Validation")
     columns = ['HH_Composition', 'HH_Income', 'Housing_Cost',
          'Gentrification', 'Education_TrackY', 'AHA-Owned', 'CRSHP',
          'ENH', 'FLOW', 'FUPF', 'FUPY', 'GAHVP', 'HFV', 'HOPE6', 'Homeflex',
