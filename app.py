@@ -94,7 +94,7 @@ alt.renderers.set_embed_options(scaleFactor=2)
 
 ## Basic setup and app layout
 st.set_page_config(layout="wide")  # this needs to be the first Streamlit command called
-st.title("Model visualization")
+st.title("House Hold Graduation")
 st.sidebar.title("Control Panel")
 left_col, middle_col, right_col = st.beta_columns(3)
 palette = sns.color_palette("bright")
@@ -131,6 +131,7 @@ data_final = pd.concat([df_majority, df_minority_upsampled])
 ## User inputs on the control panel
 mode = st.sidebar.radio("Select Section: ", ('Data', 'Visualization', 'Model'))
 if mode == 'Data':
+    st.markdown("### Data")
     data_ver = st.sidebar.selectbox(
          'Knowing the data',
          ('Original Data', 'Number of null values', 'Transformed Data'))
@@ -144,6 +145,7 @@ if mode == 'Data':
 
 
 elif mode == 'Visualization':
+    st.markdown("### Visualization")
     data_look = st.sidebar.selectbox(
          'Visualizations',
          ('Count of graduated',
@@ -245,6 +247,7 @@ elif mode == 'Visualization':
 #        'KNN Classifier'))
 
 elif mode == 'Model':
+    st.markdown("### Model Validation")
     columns = ['HH_Composition', 'HH_Income', 'Housing_Cost',
          'Gentrification', 'Education_TrackY', 'AHA-Owned', 'CRSHP',
          'ENH', 'FLOW', 'FUPF', 'FUPY', 'GAHVP', 'HFV', 'HOPE6', 'Homeflex',
